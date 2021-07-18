@@ -153,10 +153,10 @@ void loop() {
           }
         }
         if(strcmp(GESTURES[bestIndex], next_page) == 0){
-          key._putc(RIGHT_ARROW);
+          key._putc(KEY_PAGE_DOWN);
         }
         if(strcmp(GESTURES[bestIndex], last_page) == 0){
-          key._putc(LEFT_ARROW);
+          key._putc(KEY_PAGE_UP);
         }
         Serial.println();
       }
